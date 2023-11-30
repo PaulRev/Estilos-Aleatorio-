@@ -1,0 +1,139 @@
+
+.min-PagWeb-1 {
+  background: rgb(0, 0, 0);
+  width: 400px;
+  height: 300px;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px;
+  min-width: 295px;
+  position: relative;
+  box-shadow: 0 0px 7px 0 rgb(0, 0, 0);
+  overflow: hidden;
+}
+/* MENU */
+.menu {
+  position: absolute;
+  width: 30px;
+  top: 10px;
+  left: 5px;
+}
+.menu > span {
+  cursor: pointer;
+}
+
+/* NAV: */
+nav {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  background-color: white;
+  left: 0px;
+  top: 30px;
+  color: black;
+  overflow: hidden;
+  display: none;
+  z-index: 1;
+}
+.min-PagWeb-1 hr {
+  margin-left: -100px;
+  width: 200px;
+}
+.min-PagWeb-1 > nav ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  line-height: 35px;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -2;
+  margin: 3px;
+  outline: solid 3px rgba(0, 0, 0, 0.044);
+}
+.min-PagWeb-1 > nav ul li {
+  margin-top: 3px;
+  margin-left: -40px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.min-PagWeb-1 > nav ul li:hover {
+  text-decoration: underline 3px #7dcea0;
+}
+
+.min-PagWeb-1 > h1 {
+  line-height: 80px;
+}
+h1 span {
+  display: block;
+  white-space: nowrap;
+  width: 15ch;
+  animation: inicio 5s steps(11) infinite, fin 2s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes inicio {
+  from {
+    width: 0;
+  }
+}
+@keyframes fin {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.contImg {
+  background: rgb(197, 197, 199);
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 3s;
+  position: relative;
+  box-shadow: 0 0 5px 0px rgb(255, 255, 255);
+}
+.contEstrellas {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  background-color: rgba(101, 101, 101, 0);
+}
+.contEstrellas .star1 {
+  left: 10px;
+  top: 5px;
+  color: rgb(137, 43, 226);
+}
+.contEstrellas .star2 {
+  right: 5px;
+  bottom: 5px;
+  color: rgb(61, 104, 121);
+}
+
+.star {
+  position: absolute;
+  animation: starS 2s infinite;
+}
+@keyframes starS {
+  20% {
+    filter: drop-shadow(0 0px 2px);
+  }
+}
+
+.contImg img {
+  width: 90%;
+  cursor: pointer;
+  filter: drop-shadow(0 1px 4px rgb(0, 0, 0));
+}
+.contImg:hover {
+  box-shadow: 0px 20px 3px 2px rgb(255, 255, 255);
+}
+
+/* NAV TOOGLE */
+.nav1EfectoToogle {
+  display: block;
+}
